@@ -1,0 +1,146 @@
+[
+  {
+    "id": "paperback",
+    "artist": "Diffie Bosman",
+    "label": "Diffie Bosman - Paperback",
+    "source": "Music by Bensound.com",
+    "file": "sounds/ambience/Diffie Bosman - Paperback - Music by Bensound.com.mp3",
+    "category": "ambience"
+  },
+  {
+    "id": "campfire-sound",
+    "artist": "SoundsForYou",
+    "label": "SoundsForYou - Campfire Sound",
+    "source": "Pixabay",
+    "file": "sounds/ambience/SoundsForYou - Campfire Sound - Pixabay.mp3",
+    "category": "ambience"
+  },
+  {
+    "id": "forest-with-birds-chirping",
+    "artist": "SoundsForYou",
+    "label": "SoundsForYou - Forest with Birds Chirping",
+    "source": "Pixabay",
+    "file": "sounds/ambience/SoundsForYou - Forest with Birds Chirping - Pixabay.mp3",
+    "category": "ambience"
+  },
+  {
+    "id": "ocean-sea-soft-waves",
+    "artist": "SoundsForYou",
+    "label": "SoundsForYou - Ocean Sea Soft Waves",
+    "source": "Pixabay",
+    "file": "sounds/ambience/SoundsForYou - Ocean Sea Soft Waves - Pixabay.mp3",
+    "category": "ambience"
+  },
+  {
+    "id": "aeon",
+    "artist": "Theatre of Delays",
+    "label": "Theatre of Delays - Aeon",
+    "source": "Music by Bensound.com",
+    "file": "sounds/ambience/Theatre of Delays - Aeon - Music by Bensound.com.mp3",
+    "category": "ambience"
+  },
+  {
+    "id": "prism",
+    "artist": "Theatre of Delays",
+    "label": "Theatre of Delays - Prism",
+    "source": "Music by Bensound.com",
+    "file": "sounds/ambience/Theatre of Delays - Prism - Music by Bensound.com.mp3",
+    "category": "ambience"
+  },
+  {
+    "id": "slow-life",
+    "artist": "Benjamin Lazzarus",
+    "label": "Benjamin Lazzarus - Slow Life",
+    "source": "Music by Bensound.com",
+    "file": "sounds/cinematic/Benjamin Lazzarus - Slow Life - Music by Bensound.com.mp3",
+    "category": "cinematic"
+  },
+  {
+    "id": "event-horizon",
+    "artist": "Lunar Years",
+    "label": "Lunar Years - Event Horizon",
+    "source": "Music by Bensound.com",
+    "file": "sounds/cinematic/Lunar Years - Event Horizon - Music by Bensound.com.mp3",
+    "category": "cinematic"
+  },
+  {
+    "id": "echo-of-sadness",
+    "artist": "TURNIQUE",
+    "label": "TURNIQUE - Echo Of Sadness",
+    "source": "Music by Bensound.com",
+    "file": "sounds/cinematic/TURNIQUE - Echo Of Sadness - Music by Bensound.com.mp3",
+    "category": "cinematic"
+  },
+  {
+    "id": "epic",
+    "artist": "Benjamin Tissot",
+    "label": "Benjamin Tissot - Epic",
+    "source": "Music by Bensound.com",
+    "file": "sounds/combat/Benjamin Tissot - Epic - Music by Bensound.com.mp3",
+    "category": "combat"
+  },
+  {
+    "id": "extreme-action",
+    "artist": "Benjamin Tissot",
+    "label": "Benjamin Tissot - Extreme Action",
+    "source": "Music by Bensound.com",
+    "file": "sounds/combat/Benjamin Tissot - Extreme Action - Music by Bensound.com.mp3",
+    "category": "combat"
+  },
+  {
+    "id": "high-octane",
+    "artist": "Benjamin Tissot",
+    "label": "Benjamin Tissot - High Octane",
+    "source": "Music by Bensound.com",
+    "file": "sounds/combat/Benjamin Tissot - High Octane - Music by Bensound.com.mp3",
+    "category": "combat"
+  },
+  {
+    "id": "arrow-body-impact",
+    "artist": "DennisH18",
+    "label": "Arrow Body Impact",
+    "source": "Pixabay",
+    "file": "sounds/sfx/DennisH18 - Arrow Body Impact - Pixabay.mp3",
+    "category": "sfx"
+  },
+  {
+    "id": "heal-sound",
+    "artist": "Dragon Studio",
+    "label": "Heal Sound",
+    "source": "Pixabay",
+    "file": "sounds/sfx/Dragon Studio - Heal Sound - Pixabay.mp3",
+    "category": "sfx"
+  },
+  {
+    "id": "magic-spell-cast",
+    "artist": "freesound_community",
+    "label": "Magic Spell Cast",
+    "source": "Pixabay",
+    "file": "sounds/sfx/freesound_community - Magic Spell Cast - Pixabay.mp3",
+    "category": "sfx"
+  },
+  {
+    "id": "open-door-sound",
+    "artist": "freesound_community",
+    "label": "Open Door Sound",
+    "source": "Pixabay",
+    "file": "sounds/sfx/freesound_community - Open Door Sound - Pixabay.mp3",
+    "category": "sfx"
+  },
+  {
+    "id": "sword-sound",
+    "artist": "freesound_community",
+    "label": "Sword Sound",
+    "source": "Pixabay",
+    "file": "sounds/sfx/freesound_community - Sword Sound - Pixabay.mp3",
+    "category": "sfx"
+  },
+  {
+    "id": "wound-sound",
+    "artist": "freesound_community",
+    "label": "Wound Sound",
+    "source": "Pixabay",
+    "file": "sounds/sfx/freesound_community - Wound Sound - Pixabay.mp3",
+    "category": "sfx"
+  }
+]

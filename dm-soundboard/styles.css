@@ -1,0 +1,335 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    /* ===== COLORS ===== */
+    --color-gray-900: #1e1e1e;
+    --color-gray-800: #2f2f2f;
+    --color-gray-700: #444;
+    --color-gray-600: #555;
+    --color-gray-500: #888;
+    --color-gray-400: #aaa;
+
+    --color-white: #eee;
+
+    --color-red-700: #7a1f1f;
+    --color-red-500: #a52a2a;
+
+    /* ===== SPACING ===== */
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 32px;
+
+    /* ===== RADIUS ===== */
+    --radius-sm: 10px;
+
+    /* ===== DURATIONS IN MILISECONDS ===== */
+    --duration-100: 100ms;
+    --duration-200: 200ms;
+    --duration-250: 250ms;
+    --duration-300: 300ms;
+    --duration-2500: 2500ms;
+
+    /* ===== EASING ===== */
+    --ease-standard: ease;
+    --ease-in-out: ease-in-out;
+    --ease-out: ease-out;
+
+    /* ===== SHADOWS ===== */
+    --shadow-sm: 0 0 10px;
+    --shadow-md: 0 0 20px;
+
+    /* ===== OPACITY ===== */
+    --opacity-70: 0.7;
+    --opacity-85: 0.85;
+
+    /* ===== ALPHA ===== */
+    --alpha-50: 0.5;
+    --alpha-70: 0.7;
+    --alpha-90: 0.9;
+
+    /* ===== DECIMAL PERCENTAGE ===== */
+    --perc-98: 0.98;
+    --perc-100: 1;
+    --perc-102: 1.02;
+    --perc-115: 1.15;
+
+    /* ===== OTHER SIZES ===== */
+    --size-1px: 1px;
+    --size-2px: 2px;
+    --size-14px: 14px;
+    --size-16px: 16px;
+    --size-24px: 24px;
+    --size-28px: 28px;
+    --size-32px: 32px;
+    --size-72px: 72px;
+    --size-88px: 88px;
+    --size-104px: 104px;
+    --size-500px: 500px;
+
+
+    /* =====  RULES FOR ELEMENTS ===== */
+
+    /* ===== BACKGROUND COLORS ===== */
+    --bg-body: var(--color-gray-900);
+
+    --bg-button-surface: var(--color-gray-800);
+    --bg-button-surface-hover: var(--color-gray-700);
+    --bg-button-surface-active: var(--color-gray-600);
+    --bg-button-surface-focus: var(--color-gray-500);
+
+    --bg-button-stop-main: var(--color-red-700);
+    --bg-button-stop-hover: var(--color-red-500);
+
+    /* ===== TEXT COLORS ===== */
+    --text-primary: var(--color-white);
+    --footer-text: var(--color-gray-400);
+
+    /* ===== TEXT SIZE ===== */
+    --font-size-small: var(--size-14px);
+    --font-size-medium: var(--size-16px);
+    --font-size-large: var(--size-24px);
+
+    /* ===== BORDER COLOR ===== */
+    --footer-border: var(--color-gray-700);
+
+    /* ===== SIZE FOR BUTTONS ===== */
+    --size-button-min-height: var(--size-72px);
+
+    /* ===== GRID DENSITY ===== */
+    --grid-density: repeat(auto-fit, minmax(100px, 1fr));
+
+    /* ===== APP GAP ===== */
+    --app-gap: var(--space-2);
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-primary);
+    padding: var(--space-3);
+    text-align: center;
+    touch-action: manipulation;
+}
+
+h1 {
+    margin-bottom: var(--space-3);
+    font-size: var(--font-size-large);
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: var(--font-size-medium);
+    opacity: var(--opacity-70);
+    color: var(--text-primary);
+}
+
+button {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    gap: var(--app-gap);
+}
+
+.soundboard-grid {
+    display: grid;
+    grid-template-columns: var(--grid-density);
+    gap: var(--space-2);
+}
+
+.soundboard-grid button {
+    background-color: var(--bg-button-surface);
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+
+    min-height: var(--size-88px);
+    padding: var(--space-2);
+    border-radius: var(--radius-sm);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-1);
+
+    transition: transform var(--duration-100) var(--ease-standard), background-color var(--duration-200) var(--ease-standard);
+
+    user-select: none;
+}
+
+.soundboard-grid button span {
+    font-size: var(--font-size-small);
+    opacity: var(--opacity-85);
+}
+
+.soundboard-grid button:hover {
+    background-color: var(--bg-button-surface-hover);
+    transform: scale(var(--perc-102));
+}
+
+.soundboard-grid button:active {
+    background-color: var(--bg-button-surface-active);
+    transform: scale(var(--perc-98));
+}
+
+.soundboard-grid button.playing {
+    will-change: transform, box-shadow;
+    transform: scale(var(--perc-102));
+    background-color: rgb(var(--category-color));
+    animation: categoryPulse var(--duration-2500) var(--ease-in-out) infinite;
+}
+
+@keyframes categoryPulse {
+    0% {
+        box-shadow: var(--shadow-sm) rgba(var(--category-color), var(--alpha-50));
+    }
+
+    50% {
+        box-shadow: var(--shadow-md) rgba(var(--category-color), var(--alpha-90));
+    }
+
+    100% {
+        box-shadow: var(--shadow-sm) rgba(var(--category-color), var(--alpha-50));
+    }
+}
+
+@keyframes sfxFlash {
+    0% {
+        transform: scale(var(--perc-100));
+    }
+
+    50% {
+        transform: scale(var(--perc-115));
+    }
+
+    100% {
+        transform: scale(var(--perc-100));
+    }
+}
+
+.soundboard-grid button.category-sfx.flash {
+    will-change: transform, box-shadow;
+    animation: sfxFlash var(--duration-250) var(--ease-out) forwards;
+    background-color: rgb(var(--category-color));
+    box-shadow: var(--shadow-md) rgba(var(--category-color), var(--alpha-70));
+}
+
+button.stop {
+    background-color: var(--bg-button-stop-main);
+    color: var(--text-primary);
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--font-size-medium);
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+}
+
+button.stop:hover {
+    background-color: var(--bg-bttstop-hover);
+}
+
+.category-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-1);
+}
+
+.category-tabs button {
+    border-radius: var(--radius-sm);
+    background-color: var(--bg-button-surface);
+    color: var(--text-primary);
+    border: none;
+    padding: var(--space-1) var(--space-2);
+    cursor: pointer;
+}
+
+.category-tabs button:hover {
+    background-color: var(--bg-button-surface-hover);
+}
+
+.category-tabs button.active {
+    background-color: var(--bg-button-surface-active);
+}
+
+.category-tabs button:focus-visible {
+    outline: var(--size-2px) solid var(--bg-button-surface-focus);
+    outline-offset: var(--size-2px);
+}
+
+.volume-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-3);
+}
+
+.volume-controls label {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size-small);
+    color: var(--text-primary);
+}
+
+footer.credits {
+    padding-top: var(--space-3);
+    border-top: var(--size-1px) solid var(--footer-border);
+    font-size: var(--font-size-small);
+    color: var(--footer-text);
+    text-align: center;
+}
+
+footer.credits li {
+    margin: var(--space-1) 0;
+    text-align: center;
+}
+
+footer.credits ul {
+    display: none;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--duration-300) var(--ease-standard);
+}
+
+footer.credits.open ul {
+    display: block;
+    max-height: var(--size-500px);
+}
+
+footer.credits button {
+    background: none;
+    border: none;
+    color: var(--footer-text);
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    :root {
+        --font-size-large: var(--size-28px);
+        --size-button-min-height: var(--size-88px);
+        --grid-density: repeat(auto-fit, minmax(120px, 1fr));
+        --app-gap: var(--space-3);
+    }
+}
+
+@media (min-width: 1100px) {
+    :root {
+        --font-size-large: var(--size-32px);
+        --size-button-min-height: var(--size-104px);
+        --grid-density: repeat(auto-fit, minmax(140px, 1fr));
+        --app-gap: var(--space-3);
+    }
+}
