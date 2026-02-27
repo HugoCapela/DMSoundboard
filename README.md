@@ -81,7 +81,7 @@ A new Horror category will appear in the UI.
 # 📝 sounds.json Generation
 
 The `generate_sounds.py` script:
-- Scans the sounds/ directory
+- Scans the `sounds/` directory
 - Detects all category folders
 - Parses filenames into metadata
 - Accepts `.mp3`, `.wav` and `.flac` file extensions
