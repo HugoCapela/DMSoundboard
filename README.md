@@ -6,6 +6,12 @@ This project allows Dungeon Masters to organize and trigger ambience, cinematic 
 
 All sounds, categories, and metadata are generated automatically from the file system.
 
+# 🌐 Live Page
+
+The latest version of **DM Soundboard** is deployed and live using Netlify.
+
+You can check it here: https://dmsoundboard.netlify.app/
+
 # ✨ Features
 - 🎵 Dynamic category generation from folder structure
 - 📂 Automatic `sounds.json` generation via Python script
